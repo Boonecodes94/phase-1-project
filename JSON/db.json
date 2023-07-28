@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "name": "dr",
+            "image": "https://peoplefacts.com/wp-content/uploads/2015/01/14104843618_7333f7842e_z.jpg",
+        },
+        {
+            "id": 2,
+            "name": "Vet",
+            "image": "https://www.dmcounsel.com/hubfs/Smiling%20vet%20examining%20a%20dog%20in%20medical%20office-1.jpeg",
+        },
+        {
+            "id": 3,
+            "name": "Grocery",
+            "image": "https://media.istockphoto.com/id/1314210006/photo/grocery-store-shop-in-vintage-style-with-fruit-and-vegetables-crates-on-the-street.jpg?s=612x612&w=is&k=20&c=rDorP7G-edSN47u9N__h3tsct-MFitVyhDhSfuMwjGU="
+        },
+        {
+            "id": 4,
+            "name": "Hiking",
+            "image": "https://media.timeout.com/images/105898986/1920/1080/image.jpg",
+        },
+        {
+            "id": 5,
+            "name": "Restaurant",
+            "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        },
+        {
+            "id": 6,
+            "name": "Movies",
+            "image": "https://pyxis.nymag.com/v1/imgs/412/c67/965d13551ee8418ac4b7c64e4c8956c77c-movie-theater-food-nitehawk.rhorizontal.w700.jpg",
+        }
+    ]
+}
