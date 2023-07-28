@@ -8,3 +8,4 @@ const favoriteUrl = baseUrl + '/favorites'
 //when Personal or Recreational button is clicked
 document.getElementById('personal-button').addEventListener('click', () => fetchOptions('personal'));
 document.getElementById('recreational-button').addEventListener('click', () => fetchOptions('recreational'));
+
