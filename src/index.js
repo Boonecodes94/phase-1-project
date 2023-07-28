@@ -1,8 +1,8 @@
 // The base URL to the backend server 
 // The endpoints to get options and save favorites
 const baseUrl = 'http://localhost:3000';
-const optionsUrl = baseUrl + '/options'
-const favoriteUrl = baseUrl + '/favorites'
+const optionsUrl = baseUrl + '/events';
+const favoriteUrl = baseUrl + '/favorites';
 
 
 const categoryButtons = document.getElementById('category').children;
@@ -27,7 +27,7 @@ function renderOptions(options) {
 
     for(let i = 0; i < options.length; i++) {
         const optionButton = document.createElement('button');
-        optionButton.textContent = options[i].name;
+        optionButton.textContent = options[i].eventName;
         optionButton.addEventListener('click', () => makeRecommendation(options[i]));
         if(i < 2) {
             list1.appendChild(optionButton);
@@ -42,7 +42,7 @@ for(let i = 0; i < categoryButtons.length; i++) {
 }
 // event listeners, should make changes to the page as required
 function makeRecommendation(option) {
-    recommendationText.textContent = `Based on your choices, you should do ${option.name}`;
+    recommendationText.textContent = `Based on your choices, you should do ${option.eventName}`;
     eventOptionImage.src = option.image;
     saveFavorite(option);
 }
