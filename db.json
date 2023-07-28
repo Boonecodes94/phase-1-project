@@ -1,13 +1,28 @@
 {
-    "posts": [
-      {
+
+    "personal":[
+        {
         
-      }
+        }
+
+
     ],
-    "comments": [
-      {
+
+
+    "recreational":[
+        {
         
-      }
+        }
+
+
+    ],
+
+
+    "events":[
+        {
+        
+        }
+
+
     ]
-   
 }
