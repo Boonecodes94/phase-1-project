@@ -1,90 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Name, Day Planner</title>
     <!-- adds css and js later on-->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="index.js"></script>
+    
 </head>
 
 
 <body>
-    <header>
-        <h1>Name All in one day planner</h1>
-    </header>
-    <section>
-        <img id="app-image" src="Planning-1.png" alt="App Image">
-        <h2>A place to ...</h2>
-        <select id="user-favorites">
-            <option value="">Select favorite</option>
+    <h1>Name All in one day planner</h1>
+    <h2>A place to ...</h2>
             <!-- will add options here -->
-        </select>
-        <p>Please choose, Personal or Recreational</p>
+        <p>Choose between Personal or Recreational</p>
         
-        
-        <div id="choices">
+        <div id="category">
             <button>Personal</button>
             <button>Recreational</button>
         </div>
-        <div id="location-entry">
-            <input type="text" placeholder="Enter location">
-            <button>Submit</button>
+        <div id="options">
+            <div id="list-1"></div>
+            <div id="list-2"></div>
         </div>
 
-        <div id="preferences">
-            <div class="list-container">
-                <h3>One</h3>
-                <div class="list">
-                    <button class="list-item">Option A</button>
-                    <button class="list-item">Option B</button>
-                    <button class="list-item">Option C</button>
-                    <button class="list-item">Option D</button>
-                    <button class="list-item">Option E</button>
-                </div>
-                <h3>Two</h3>
-                <div class="list">
-                    <button class="list-item">Option A</button>
-                    <button class="list-item">Option B</button>
-                    <button class="list-item">Option C</button>
-                    <button class="list-item">Option D</button>
-                    <button class="list-item">Option E</button>
-                </div>
-                <h3>Three</h3>
-                <div class="list">
-                    <button class="list-item">Option A</button>
-                    <button class="list-item">Option B</button>
-                    <button class="list-item">Option C</button>
-                    <button class="list-item">Option D</button>
-                    <button class="list-item">Option E</button>
-                </div>
-                <h3>Four</h3>
-                <div class="list">
-                    <button class="list-item">Option A</button>
-                    <button class="list-item">Option B</button>
-                    <button class="list-item">Option C</button>
-                    <button class="list-item">Option D</button>
-                    <button class="list-item">Option E</button>
-                </div>
-                <h3>Five</h3>
-                <div class="list">
-                    <button class="list-item">Option A</button>
-                    <button class="list-item">Option B</button>
-                    <button class="list-item">Option C</button>
-                    <button class="list-item">Option D</button>
-                    <button class="list-item">Option E</button>
-                </div>
-            </div>
+        <div id="recommendation">
+            <p id="recommendation-text">Based on your choices... you should do this...</p>
+            <!-- image placeholder, will be resized later? -->
+            <img id="event-option-image" src="picnic-park.jpg" alt="Event Option Image">
+            <p>Enjoy your day</p>
         </div>
-       
-       
-       
-        <p>Based on your choices... you should do this...</p>
-        <!-- image placeholder, will be resized -->
-        <img id="event-option-image" src="picnic-park.jpg" alt="Event Option Image">
-        <p>Enjoy your day</p>
-    </section>
 
+    
 
+    <script src="index.js"></script>
 </body>
 
 </html>
