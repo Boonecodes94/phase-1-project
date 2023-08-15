@@ -22,14 +22,14 @@ function fetchOptions(category) {
 //  Render data to the page
 function renderOptions(options) {
     // Clear previous options
-    while(list1.firstChild) list1.firstChild.remove();
-    while(list2.firstChild) list2.firstChild.remove();
+    while (list1.firstChild) list1.firstChild.remove();
+    while (list2.firstChild) list2.firstChild.remove();
 
-    for(let i = 0; i < options.length; i++) {
+    for (let i = 0; i < options.length; i++) {
         const optionButton = document.createElement('button');
         optionButton.textContent = options[i].eventName;
         optionButton.addEventListener('click', () => makeRecommendation(options[i]));
-        if(i < 2) {
+        if (i < 2) {
             list1.appendChild(optionButton);
         } else {
             list2.appendChild(optionButton);
@@ -37,12 +37,12 @@ function renderOptions(options) {
     }
 }
 
-for(let i = 0; i < categoryButtons.length; i++) {
+for (let i = 0; i < categoryButtons.length; i++) {
     categoryButtons[i].addEventListener('click', () => fetchOptions(categoryButtons[i].textContent.toLowerCase()));
 }
 // event listeners, should make changes to the page as required
 function makeRecommendation(option) {
-    recommendationText.textContent = `Based on your choices, you should do ${option.eventName}`;
+    recommendationText.textContent = `Based on your choices, you should do ${option.name}`;
     eventOptionImage.src = option.image;
     saveFavorite(option);
 }
